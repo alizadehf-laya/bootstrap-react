@@ -5,14 +5,11 @@ import Header from "./assets/components/header/Header";
 
 
 function App() {
- 
-
-
-
-
     return (
       <>
-
+      <Header/>
+      <Students/>
+      <Footer/>
       </>
     );
   }
