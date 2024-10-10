@@ -7,9 +7,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Header() { 
     return (
       <>
-    <Navbar expand="lg" className="bg-body-tertiary">
+<Container >
+<Navbar expand="lg" className="bg-body-tertiary"  >
       <Container fluid>
-        <Navbar.Brand href="#">Laya Alizadeh</Navbar.Brand>
+        <Navbar.Brand href="#">Students Info</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -19,7 +20,7 @@ function Header() {
           >
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">About Us</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
+            <NavDropdown title="Contact" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Contact</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
@@ -45,6 +46,8 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+</Container>
+  
       </>
     )
   }

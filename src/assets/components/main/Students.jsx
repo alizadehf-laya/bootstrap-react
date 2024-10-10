@@ -1,13 +1,16 @@
+import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+
 
 function Students() {
 
 
     return (
       <>
-    <Row xs={1} md={4} className="g-4">
+      <Container className='mt-5 mb-5'>
+      <Row xs={1} md={4} className="g-4">
       {Array.from({ length: 8 }).map((_, idx) => (
         <Col key={idx}>
           <Card>
@@ -24,6 +27,8 @@ function Students() {
         </Col>
       ))}
     </Row>
+      </Container>
+   
     </>
   );
 }
